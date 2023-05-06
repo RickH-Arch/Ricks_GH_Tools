@@ -1,0 +1,12 @@
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.csproj.AssemblyReference.cache
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.Properties.Resource1.resources
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.csproj.GenerateResource.cache
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.csproj.CoreCompileInputs.cache
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\bin\RICK_GH_Tool.dll
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\bin\RICK_GH_Tool.pdb
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\bin\PathFinderClass.dll
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\bin\PathFinderClass.pdb
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\bin\PathFinderClass.dll.config
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.csproj.CopyComplete
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.dll
+D:\_EVENTS_\RICK_GH_Tool\RICK_GH_Tool\obj\Debug\RICK_GH_Tool.pdb

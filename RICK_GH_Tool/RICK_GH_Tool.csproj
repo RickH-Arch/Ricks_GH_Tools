@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F23DD9DF-174E-4CBD-9B8D-EEABEBD978BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RICK_GH_Tool</RootNamespace>
+    <AssemblyName>RICK_GH_Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PathFinderClass">
+      <HintPath>..\PathFinderClass\bin\Debug\PathFinderClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="RhinoCommon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\System\rhinocommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Rhino 6\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generator\Wave\WaveComponent.cs" />
+    <Compile Include="Generator\Wave\WaveParticle.cs" />
+    <Compile Include="Generator\Wave\WaveVariableComponent.cs" />
+    <Compile Include="Generator\Wave\WaveVariableContainer.cs" />
+    <Compile Include="Generator\Wave\WaveVariables.cs" />
+    <Compile Include="Geometry\CullDuplicatedPointsByRadius_Component.cs" />
+    <Compile Include="Geometry\FindCorner.cs" />
+    <Compile Include="Geometry\GroupBrepByDistance.cs" />
+    <Compile Include="Generator\HexagonalWeaving.cs" />
+    <Compile Include="Geometry\MeshDual.cs" />
+    <Compile Include="Geometry\NormalizeCurveParameterComponent.cs" />
+    <Compile Include="PathFinder\PathParser.cs" />
+    <Compile Include="PathFinder\PathViewer.cs" />
+    <Compile Include="Geometry\PointMatch_Tree.cs" />
+    <Compile Include="Geometry\PolygonEdgeParser.cs" />
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RICK_GH_ToolInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PathFinder\StamperBoss.cs" />
+    <Compile Include="PathFinder\WiFi_Stamper.cs" />
+    <Compile Include="RICK_TOOL_CategoryIcon.cs" />
+    <Compile Include="Tools\AbstractNoise.cs" />
+    <Compile Include="Tools\PerlinNoise.cs" />
+    <Compile Include="Tools\SimplexNoise.cs" />
+    <Compile Include="Transformer\CurvesToDots\CurvesToDotsComponent.cs" />
+    <Compile Include="Transformer\GraphOnCurves\GraphOnCurvesComponent.cs" />
+    <Compile Include="Transformer\GraphOnCurves\GraphPoint.cs" />
+    <Compile Include="Transformer\GraphOnCurves\GraphPointPool.cs" />
+    <Compile Include="Transformer\SplitCurvesByCurvesComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\PathParser.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PathViewer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiFiStamper.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StamperBoss.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindCorner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolygonEdgeParser.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointMatch_Tree.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupBrepByDistance.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeshDual.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HexagonalWeaving.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wave.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaveVariable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RickTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RickTool2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphOnCurve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurvesToDots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CullDuplicatedPointsByRadius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplitCurvesByCurves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalizeCurveParameter.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FallbackCulture>en-US</FallbackCulture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>C:\Program Files\Rhino 6\System\Rhino.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>
